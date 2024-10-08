@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./logo.jpg" />
+    <title>KUMIO Map Drawing Analysis</title>
+  </head>
+  <body>
+    <div id="image-preview"></div>
+    <div class="main-canvas">
+      <div class="content-box">
+        <div class="navigation">
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a
+                  class="nav-page"
+                  href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=0#gid=0"
+                  target="_blank"
+                  >Excel Files (Varlik)</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-page"
+                  href="https://docs.google.com/spreadsheets/d/1RawgHWXXUowVWFyWV8a1tMTgUcBuBPBdLEX02Q1zjA4/edit?gid=0#gid=0"
+                  target="_blank"
+                  >Excel Files (Fulya)</a
+                >
+              </li>
+              <li>
+                <a class="nav-page" href="#" target="_blank"
+                  >Final Excel Files</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-page"
+                  href="https://miro.com/app/board/uXjVKRR6CBY=/"
+                  target="_blank"
+                  >Miro Board</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-page"
+                  href="https://docs.google.com/document/d/1J2iwShgzVEraRFPKWpo4cQGDtMbz6JiBezXPE89n2b0/edit?usp=sharing"
+                  target="_blank"
+                  ><strong>Word Documentation</strong>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header">
+          <div class="logo">
+            <a href="https://kumio.itu.edu.tr/"
+              ><img src="logo.jpg" class="kumio-logo" />
+            </a>
+          </div>
+
+          <h1>Map Drawing Analysis</h1>
+        </div>
+        <div class="content">
+          <div class="col TG col-experiment-list">
+            <div class="col-header">
+              <h2>TG Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="TG-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_1.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_2.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_3.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_4.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_5.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_6.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    class="image-link"
+                    >TG_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_8.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_10.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_11.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_12.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_13.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_13
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_14.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_15.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_15
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_16.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_16
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_17.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >TG_17
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_18.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >TG_18
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_19.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_19
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_20.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_20
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_21.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_21
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_22.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_22
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_23.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_23
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_24.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_24
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_25.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_25
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_26.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_26
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_27.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_27
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_28.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >TG_28
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_29.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >TG_29
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./01_TG_haritalar/TG_30.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >TG_30
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col OTG col-experiment-list">
+            <div class="col-header">
+              <h2>OTG Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="OTG-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_1.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_2.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_3.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_4.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_5.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_6.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_8.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_10.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_11.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_12.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OTG_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_13.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_13
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_14.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_15.jpg"
+                    target="_blank"
+                    class="image-link no-analysis"
+                    >OTG_15
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_16.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_16
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_17.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_17
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_18.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_18
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_19.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_19
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_20.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_20
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_21.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OTG_21
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_22.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_22
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_23.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_23
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_24.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_24
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_25.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_25
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_26.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_26
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_27.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_27
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_28.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OTG_28
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_29.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_29
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_30.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OTG_30
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./02_OTG_haritalar/TGO_31.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OTG_31
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col KG col-experiment-list">
+            <div class="col-header">
+              <h2>KG Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="KG-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_1.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_2.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >KG_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_3.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_4.jpg"
+                    target="_blank"
+                    class="image-link no-analysis"
+                    >KG_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_5.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >KG_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_6.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_8.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_10.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_11.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_12.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_14.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_15.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KG_15
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./03_KG_haritalar/KG_16.jpg"
+                    target="_blank"
+                    class="image-link question no-e-g-axis"
+                    >KG_16
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col OKG col-experiment-list">
+            <div class="col-header">
+              <h2>OKG Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="OKG-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_1.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OKG_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_2.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_3.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_4.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_5.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_6.jpg"
+                    target="_blank"
+                    class="image-link no-file"
+                    >OKG_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_8.jpg"
+                    target="_blank"
+                    class="image-link no-analysis"
+                    >OKG_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_10.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_11.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >OKG_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_12.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_13.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >OKG_13
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_14.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKG_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_15.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >OKG_15
+                  </a>
+                </li>
+
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_16.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OKG_16
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_17.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_17
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_18.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_18
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_19.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_19
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_20.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_20
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_142.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_21
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./04_OKG_haritalar/KGO_152.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKG_22
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col KGH col-experiment-list">
+            <div class="col-header">
+              <h2>KGH Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="KGH-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_1.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_2.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_3.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_4.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_5.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_6.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_8.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >KGH_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_10.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >KGH_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_11.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_12.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >KGH_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_13.jpg"
+                    target="_blank"
+                    class="image-link no-analysis"
+                    >KGH_13
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_14.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >KGH_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_15.jpg"
+                    target="_blank"
+                    class="image-link no-file"
+                    >KGH_15
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_16.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >KGH_16
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--error"
+                    name="close-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_17.jpg"
+                    target="_blank"
+                    class="image-link no-file"
+                    >KGH_17
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_18.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >KGH_18
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_19.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >KGH_19
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./05_KGH_haritalar/KGH_20.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >KGH_20
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col OKGH col-experiment-list">
+            <div class="col-header">
+              <h2>OKGH Maps</h2>
+            </div>
+            <div class="list">
+              <ul id="OKGH-fileList" class="vertical-list">
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_1.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_1
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_2.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_2
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_3.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OKGH_3
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_4.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_4
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_5.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >OKGH_5
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_6.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_6
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_7.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_7
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_8.jpg"
+                    target="_blank"
+                    class="image-link no-e-g-axis"
+                    >OKGH_8
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_9.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_9
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_10.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_10
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_11.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_11
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_12.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_12
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_13.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_13
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons icons--alert"
+                    name="alert-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_14.jpg"
+                    target="_blank"
+                    class="image-link no-axis"
+                    >OKGH_14
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_15.jpg"
+                    target="_blank"
+                    class="image-link"
+                    >OKGH_15
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_16.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKGH_16
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_17.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKGH_17
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_18.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKGH_18
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_19.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKGH_19
+                  </a>
+                </li>
+                <li>
+                  <ion-icon
+                    class="icons"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <a
+                    href="./06_OKGH_haritalar/OKGH_20.jpg"
+                    target="_blank"
+                    class="image-link new"
+                    >OKGH_20
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">TG Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>76,67%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>6,90/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>63,77%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>76,38%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>36,67%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>33,33%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>13,33%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>16,67%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">OTG Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>76,30%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>6,87/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>61,17%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>77,17%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>45,16%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>12,90%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>6,45%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>32,26%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">KG Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>83,70%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>7,53/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>71,68%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>89,97%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>45%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>25%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>15%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>10%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">OKG Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>73,02%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>6,55/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>67,18%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>93,63%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>40,91%%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>36,36%%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>4,55%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>18,18%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">KGH Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>82,66%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>7,47/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>76,38%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>81,92%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>55,56%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>16,67%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>16,67%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>11,11%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col center">
+            <h3 class="analysis-summary-header">OKGH Analysis Summary</h3>
+            <div class="divider-horizontal margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Landmark Ratio:</p>
+                <p>82,22%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Median L. no:</p>
+                <p>7,40/9</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Named L:</p>
+                <p>56,76%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Correct N. L.:</p>
+                <p>79,91%</p>
+              </li>
+            </ul>
+            <div class="margin-bottom"></div>
+            <ul>
+              <li class="analysis-summary-list">
+                <p>Plan Drawing:</p>
+                <p>50%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Pers. Drawing:</p>
+                <p>25%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Desc. Drawing:</p>
+                <p>15%</p>
+              </li>
+              <li class="analysis-summary-list">
+                <p>Mixed Drawing:</p>
+                <p>10%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=B4"
+              target="_blank"
+              class="other-link"
+              ><h3>TG GRAPHS</h3></a
+            >
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=D4"
+              target="_blank"
+              class="other-link"
+              ><h3>OTG GRAPHS</h3></a
+            >
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=N4"
+              target="_blank"
+              class="other-link"
+              ><h3>KG GRAPHS</h3></a
+            >
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=P4"
+              target="_blank"
+              class="other-link"
+              ><h3>OKG GRAPHS</h3></a
+            >
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=H4"
+              target="_blank"
+              class="other-link"
+              ><h3>KGH GRAPHS</h3></a
+            >
+          </div>
+          <div class="col graph-links center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578&range=J4"
+              target="_blank"
+              class="other-link"
+              ><h3>OKGH GRAPHS</h3></a
+            >
+          </div>
+
+          <div class="col graph-links two-span center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578"
+              target="_blank"
+              class="other-link"
+              ><h3>TG - OTG COMPARASION</h3></a
+            >
+          </div>
+          <div class="col graph-links two-span center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578"
+              target="_blank"
+              class="other-link"
+              ><h3>KG - OKG COMPARASION</h3></a
+            >
+          </div>
+          <div class="col graph-links two-span center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578"
+              target="_blank"
+              class="other-link"
+              ><h3>KGH - OKGH COMPARASION</h3></a
+            >
+          </div>
+          <div class="col graph-links full-span center">
+            <a
+              href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=1257104578#gid=1257104578"
+              target="_blank"
+              class="other-link"
+              ><h3>ALL COMPARASIONS</h3></a
+            >
+          </div>
+        </div>
+        <div class="column-inside">
+          <h2>Lejant</h2>
+          <div class="divider-vertical"></div>
+          <img class="analysis-system" src="analysis-system-h.jpg" />
+          <div class="divider-vertical"></div>
+          <ul class="lejant">
+            <li class="lejant-list">
+              <p class="no-axis lejant-elements">Axis Could Not Be Found</p>
+            </li>
+            <li class="lejant-list">
+              <p class="no-analysis lejant-elements">Analysis Not Possible</p>
+            </li>
+            <li class="lejant-list">
+              <p class="no-e-g-axis lejant-elements">
+                Wrong Entrance - Golden Gate Direction
+              </p>
+            </li>
+            <li class="lejant-list">
+              <p class="no-file lejant-elements">File Could Not Be Found</p>
+            </li>
+          </ul>
+          <div class="divider-vertical"></div>
+          <ul class="lejant">
+            <li class="lejant-list center bHarf">
+              <p class="analysis-V lejant-elements side-by-side-list">V</p>
+              <p class="analysis-F lejant-elements side-by-side-list">F</p>
+              <p class="analysis-O lejant-elements side-by-side-list">O</p>
+            </li>
+            <div class="divider-horizontal"></div>
+            <li class="lejant-list center">
+              <p class="analysis-V lejant-elements side-by-side-list">Varlik</p>
+              <p class="analysis-F lejant-elements side-by-side-list">Fulya</p>
+              <p class="analysis-O lejant-elements side-by-side-list">Ortak</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer">
+          <p
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:dct="http://purl.org/dc/terms/"
+          >
+            <a
+              property="dct:title"
+              rel="cc:attributionURL"
+              href="https://kumio.itu.edu.tr/"
+              target="_blank"
+              ><strong>KUMIO</strong></a
+            >
+            by
+            <a
+              rel="cc:attributionURL dct:creator"
+              property="cc:attributionName"
+              href="https://research.itu.edu.tr/tr/persons/leman-figen-g%C3%BCl"
+              target="_blank"
+              >Leman Figen GÜL, TUBITAK 1001 122K268</a
+            >
+            is licensed under
+            <a
+              href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+              target="_blank"
+              rel="license noopener noreferrer"
+              style="display: inline-block"
+              >CC BY-NC-SA 4.0<img
+                style="
+                  height: 22px !important;
+                  margin-left: 10px;
+                  vertical-align: text-bottom;
+                "
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                alt="" /><img
+                style="
+                  height: 22px !important;
+                  margin-left: 3px;
+                  vertical-align: text-bottom;
+                "
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                alt="" /><img
+                style="
+                  height: 22px !important;
+                  margin-left: 3px;
+                  vertical-align: text-bottom;
+                "
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                alt="" /><img
+                style="
+                  height: 22px !important;
+                  margin-left: 3px;
+                  vertical-align: text-bottom;
+                "
+                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+                alt=""
+            /></a>
+          </p>
+          <style>
+            p {
+              font-family: var(--wp--preset--font-family--body) !important;
+              font-style: normal !important;
+              font-size: 12px;
+            }
+            a {
+              /* text-decoration: none; */
+              color: black;
+            }
+            img {
+              margin-left: 5px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      ///////////////////////////////////////
+      // FOR TG ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("TG-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/TG_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./01_TG_haritalar/analysis/${analysisTypes[j]}/TG_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+
+      // FOR OTG ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("OTG-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/TGO_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./02_OTG_haritalar/analysis/${analysisTypes[j]}/TGO_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+
+      // FOR KG ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("KG-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/KG_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./03_KG_haritalar/analysis/${analysisTypes[j]}/KG_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+
+      // FOR OKG ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("OKG-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/KGO_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./04_OKG_haritalar/analysis/${analysisTypes[j]}/KGO_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+
+      // FOR KGH ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("KGH-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/KGH_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./05_KGH_haritalar/analysis/${analysisTypes[j]}/KGH_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+
+      // FOR KGH ANALYSIS
+      ///////////////////////////
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const ul = document.getElementById("OKGH-fileList");
+        if (ul) {
+          // Ensure that the element exists
+          const liElements = ul.getElementsByTagName("li");
+          console.log(`Found ${liElements.length} list items`);
+
+          const analysisTypes = ["Varlik", "Fulya", "Ortak"];
+          const analysisLetters = ["V", "F", "O"];
+
+          for (let i = 0; i < liElements.length; i++) {
+            const li = liElements[i];
+            const mainLink = li.querySelector("a");
+            const href = mainLink.getAttribute("href");
+            const match = href.match(/OKGH_(\d+)\.jpg/);
+
+            if (match) {
+              const number = match[1];
+              for (let j = 0; j < analysisTypes.length; j++) {
+                const analysisLink = document.createElement("a");
+                analysisLink.href = `./06_OKGH_haritalar/analysis/${analysisTypes[j]}/OKGH_${number}.jpg`;
+                analysisLink.target = "_blank";
+                analysisLink.className = `image-link analysis-links analysis-${analysisLetters[j]}`;
+                analysisLink.textContent = analysisLetters[j];
+                li.appendChild(analysisLink);
+              }
+            }
+          }
+        } else {
+          console.error('Element with ID "fileList" not found');
+        }
+      });
+      ///////////////////////////////////
+
+      // FOR IMAGE PREVIEW
+      ///////////////////////////
+
+      // Function to attach event listeners to image links
+      function attachImagePreviewListeners() {
+        document.querySelectorAll(".image-link").forEach((link) => {
+          link.addEventListener("mouseover", function () {
+            const previewDiv = document.getElementById("image-preview");
+            const img = document.createElement("img");
+            img.src = this.href; // Get image URL from the anchor tag
+            previewDiv.innerHTML = ""; // Clear any previous image
+            previewDiv.appendChild(img);
+            previewDiv.style.display = "block";
+          });
+
+          link.addEventListener("mousemove", function (event) {
+            const previewDiv = document.getElementById("image-preview");
+            previewDiv.style.top = event.pageY - 200 + "px"; // Position the box near the cursor
+            previewDiv.style.left = event.pageX + 10 + "px";
+          });
+
+          link.addEventListener("mouseout", function () {
+            const previewDiv = document.getElementById("image-preview");
+            previewDiv.style.display = "none";
+          });
+        });
+      }
+
+      // Call the function once when the page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        attachImagePreviewListeners();
+
+        // Dynamically add new links for demonstration
+        const fileList = document.getElementById("fileList");
+        const newLinks = [
+          { href: "image3.jpg", text: "Image 3" },
+          { href: "image4.jpg", text: "Image 4" },
+        ];
+
+        newLinks.forEach((link) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = link.href;
+          a.textContent = link.text;
+          a.classList.add("image-link");
+          a.target = "_blank";
+          li.appendChild(a);
+          fileList.appendChild(li);
+        });
+
+        // Re-attach event listeners to the newly added links
+        attachImagePreviewListeners();
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
