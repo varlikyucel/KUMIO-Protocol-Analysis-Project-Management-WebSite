@@ -8,7 +8,10 @@
     <title>KUMIO Protocol Analysis</title>
   </head>
   <body>
-    <div id="image-preview"></div>
+    <!-- <div id="image-preview"></div> -->
+
+    <div id="paragraphCanvas" style="display: none"></div>
+
     <div class="main-canvas">
       <div class="content-box">
         <div class="navigation">
@@ -19,7 +22,7 @@
                   class="nav-page"
                   href="https://docs.google.com/spreadsheets/d/15uZPsqZqDFLt7NwDn25rfXZXLz1toBYnOE6nULE08QU/edit?gid=0#gid=0"
                   target="_blank"
-                  >Excel Files (Varlik)</a
+                  >Files (Sinem)</a
                 >
               </li>
               <li>
@@ -27,7 +30,7 @@
                   class="nav-page"
                   href="https://docs.google.com/spreadsheets/d/1RawgHWXXUowVWFyWV8a1tMTgUcBuBPBdLEX02Q1zjA4/edit?gid=0#gid=0"
                   target="_blank"
-                  >Excel Files (Fulya)</a
+                  >Files (Varlik)</a
                 >
               </li>
               <li>
@@ -38,7 +41,7 @@
               <li>
                 <a
                   class="nav-page"
-                  href="https://miro.com/app/board/uXjVKRR6CBY=/"
+                  href="https://miro.com/app/board/uXjVKQICPX8=/?share_link_id=373811521451"
                   target="_blank"
                   >Miro Board</a
                 >
@@ -69,7 +72,7 @@
               <h2>TG Maps</h2>
             </div>
             <div class="list">
-              <ul id="TG-fileList" class="vertical-list">
+              <ul id="TG-fileList" class="list-item vertical-list">
                 <li>
                   <ion-icon
                     class="icons"
@@ -193,13 +196,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons"
-                    name="checkmark-circle-outline"
+                    class="icons icons--error"
+                    name="close-circle-outline"
                   ></ion-icon>
                   <a
                     href="./01_TG_haritalar/TG_11.jpg"
                     target="_blank"
-                    class="image-link"
+                    class="image-link no-file"
                     >TG_11
                   </a>
                 </li>
@@ -265,25 +268,25 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./01_TG_haritalar/TG_17.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >TG_17
                   </a>
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./01_TG_haritalar/TG_18.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >TG_18
                   </a>
                 </li>
@@ -397,13 +400,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./01_TG_haritalar/TG_28.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >TG_28
                   </a>
                 </li>
@@ -421,13 +424,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./01_TG_haritalar/TG_30.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >TG_30
                   </a>
                 </li>
@@ -574,13 +577,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./02_OTG_haritalar/TGO_12.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >OTG_12
                   </a>
                 </li>
@@ -610,13 +613,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--error"
-                    name="close-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./02_OTG_haritalar/TGO_15.jpg"
                     target="_blank"
-                    class="image-link no-analysis"
+                    class="image-link"
                     >OTG_15
                   </a>
                 </li>
@@ -682,13 +685,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./02_OTG_haritalar/TGO_21.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >OTG_21
                   </a>
                 </li>
@@ -766,13 +769,13 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
+                    class="icons"
+                    name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
                     href="./02_OTG_haritalar/TGO_28.jpg"
                     target="_blank"
-                    class="image-link no-axis"
+                    class="image-link"
                     >OTG_28
                   </a>
                 </li>
@@ -790,26 +793,14 @@
                 </li>
                 <li>
                   <ion-icon
-                    class="icons icons--alert"
-                    name="alert-circle-outline"
-                  ></ion-icon>
-                  <a
-                    href="./02_OTG_haritalar/TGO_30.jpg"
-                    target="_blank"
-                    class="image-link no-axis"
-                    >OTG_30
-                  </a>
-                </li>
-                <li>
-                  <ion-icon
                     class="icons"
                     name="checkmark-circle-outline"
                   ></ion-icon>
                   <a
-                    href="./02_OTG_haritalar/TGO_31.jpg"
+                    href="./02_OTG_haritalar/TGO_30.jpg"
                     target="_blank"
                     class="image-link"
-                    >OTG_31
+                    >OTG_30
                   </a>
                 </li>
               </ul>
@@ -2450,61 +2441,60 @@
           console.error('Element with ID "fileList" not found');
         }
       });
-      ///////////////////////////////////
 
-      // FOR IMAGE PREVIEW
-      ///////////////////////////
+      // // FOR IMAGE PREVIEW
+      // ///////////////////////////
 
-      // Function to attach event listeners to image links
-      function attachImagePreviewListeners() {
-        document.querySelectorAll(".image-link").forEach((link) => {
-          link.addEventListener("mouseover", function () {
-            const previewDiv = document.getElementById("image-preview");
-            const img = document.createElement("img");
-            img.src = this.href; // Get image URL from the anchor tag
-            previewDiv.innerHTML = ""; // Clear any previous image
-            previewDiv.appendChild(img);
-            previewDiv.style.display = "block";
-          });
+      // // Function to attach event listeners to image links
+      // function attachImagePreviewListeners() {
+      //   document.querySelectorAll(".image-link").forEach((link) => {
+      //     link.addEventListener("mouseover", function () {
+      //       const previewDiv = document.getElementById("image-preview");
+      //       const img = document.createElement("img");
+      //       img.src = this.href; // Get image URL from the anchor tag
+      //       previewDiv.innerHTML = ""; // Clear any previous image
+      //       previewDiv.appendChild(img);
+      //       previewDiv.style.display = "block";
+      //     });
 
-          link.addEventListener("mousemove", function (event) {
-            const previewDiv = document.getElementById("image-preview");
-            previewDiv.style.top = event.pageY - 200 + "px"; // Position the box near the cursor
-            previewDiv.style.left = event.pageX + 10 + "px";
-          });
+      //     link.addEventListener("mousemove", function (event) {
+      //       const previewDiv = document.getElementById("image-preview");
+      //       previewDiv.style.top = event.pageY - 200 + "px"; // Position the box near the cursor
+      //       previewDiv.style.left = event.pageX + 10 + "px";
+      //     });
 
-          link.addEventListener("mouseout", function () {
-            const previewDiv = document.getElementById("image-preview");
-            previewDiv.style.display = "none";
-          });
-        });
-      }
+      //     link.addEventListener("mouseout", function () {
+      //       const previewDiv = document.getElementById("image-preview");
+      //       previewDiv.style.display = "none";
+      //     });
+      //   });
+      // }
 
-      // Call the function once when the page loads
-      document.addEventListener("DOMContentLoaded", function () {
-        attachImagePreviewListeners();
+      // // Call the function once when the page loads
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   attachImagePreviewListeners();
 
-        // Dynamically add new links for demonstration
-        const fileList = document.getElementById("fileList");
-        const newLinks = [
-          { href: "image3.jpg", text: "Image 3" },
-          { href: "image4.jpg", text: "Image 4" },
-        ];
+      //   // Dynamically add new links for demonstration
+      //   const fileList = document.getElementById("fileList");
+      //   const newLinks = [
+      //     { href: "image3.jpg", text: "Image 3" },
+      //     { href: "image4.jpg", text: "Image 4" },
+      //   ];
 
-        newLinks.forEach((link) => {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.href = link.href;
-          a.textContent = link.text;
-          a.classList.add("image-link");
-          a.target = "_blank";
-          li.appendChild(a);
-          fileList.appendChild(li);
-        });
+      //   newLinks.forEach((link) => {
+      //     const li = document.createElement("li");
+      //     const a = document.createElement("a");
+      //     a.href = link.href;
+      //     a.textContent = link.text;
+      //     a.classList.add("image-link");
+      //     a.target = "_blank";
+      //     li.appendChild(a);
+      //     fileList.appendChild(li);
+      //   });
 
-        // Re-attach event listeners to the newly added links
-        attachImagePreviewListeners();
-      });
+      //   // Re-attach event listeners to the newly added links
+      //   attachImagePreviewListeners();
+      // });
     </script>
     <script
       type="module"
@@ -2514,5 +2504,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="TG_script.js"></script>
+    <script src="OTG_script.js"></script>
   </body>
 </html>

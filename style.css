@@ -296,7 +296,8 @@ li {
 
 .analysis-system {
   margin: 0;
-  width: 350px;
+  width: 550px;
+  border-radius: 20px;
 }
 
 .side-by-side-list {
@@ -360,7 +361,7 @@ li {
   border: 1px solid #333;
   color: #222222;
 
-  content: "Analysis:30";
+  content: "Analysis:29";
   background-color: #eeffed;
   transform: translate(0px, -50%);
 }
@@ -388,11 +389,11 @@ li {
 .col-experiment-list::before {
   transform: translate(-110%, -50%);
   background-color: #fff7ea;
-  content: "Total:30";
+  content: "Total:29";
 }
 
 .OTG::before {
-  content: "Total:31";
+  content: "Total:30";
 }
 
 .KG::before {
@@ -462,4 +463,21 @@ li {
 
 .analysis-summary-list p {
   font-size: 15px;
+}
+
+.list-item {
+  display: block; /* Make sure the elements have block-level behavior */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+#paragraphCanvas {
+  position: absolute; /* Make sure this is set to absolute */
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  overflow: auto;
 }
