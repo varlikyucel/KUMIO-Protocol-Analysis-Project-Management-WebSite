@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Create the video element dynamically
             const video = document.createElement("video");
-            video.src = `../videos/OTG/${listItemText}.mp4`; // Assuming the ID is the video name
+            video.src = `./videos/OTG/${listItemText}.mp4`; // Assuming the ID is the video name
             video.controls = true;
             video.style.width = "100%"; // Make video fill the width of the text box
             video.style.height = "auto"; // Maintain the aspect ratio
