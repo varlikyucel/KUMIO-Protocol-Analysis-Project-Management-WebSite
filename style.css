@@ -375,21 +375,21 @@ li {
 }
 
 .OKG::after {
-  content: "Analysis:20";
+  content: "Analysis:15";
 }
 
 .KGH::after {
-  content: "Analysis:17";
+  content: "Analysis:12";
 }
 
 .OKGH::after {
-  content: "Analysis:20";
+  content: "Analysis:15";
 }
 
 .col-experiment-list::before {
   transform: translate(-110%, -50%);
   background-color: #fff7ea;
-  content: "Total:29";
+  content: "Total:30";
 }
 
 .OTG::before {
@@ -401,15 +401,15 @@ li {
 }
 
 .OKG::before {
-  content: "Total:21";
+  content: "Total:15";
 }
 
 .KGH::before {
-  content: "Total:18";
+  content: "Total:13";
 }
 
 .OKGH::before {
-  content: "Total:20";
+  content: "Total:15";
 }
 
 /* Counter */

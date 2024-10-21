@@ -8,22 +8,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
-      const listItems = document.querySelectorAll("#OTG-fileList li");
+      const anchorElements = document.querySelectorAll("#OTG-fileList li a"); // Target only anchor elements
       const paragraphCanvas = document.getElementById("paragraphCanvas");
       let isHoveringOverPopup = false;
-      let hidePopupTimeout; // New timeout to manage popup hiding
+      let hidePopupTimeout;
 
-      // Handle mouse entering a list item
-      listItems.forEach(function (item) {
-        item.addEventListener("mouseenter", function (event) {
+      // Handle mouse entering an anchor element
+      anchorElements.forEach(function (linkElement) {
+        linkElement.addEventListener("mouseenter", function (event) {
           clearTimeout(hidePopupTimeout); // Clear any pending popup hide action
 
-          const linkElement = item.querySelector("a");
           const listItemText = linkElement.textContent.trim();
-
           const paragraph = jsonData.find((p) => p.id === listItemText);
           if (paragraph) {
-            paragraphCanvas.textContent = paragraph.description;
+            // Clear the existing content in the popup
+            paragraphCanvas.innerHTML = "";
+
+            // Create the video element dynamically
+            const video = document.createElement("video");
+            video.src = `../videos/OTG/${listItemText}.mp4`; // Assuming the ID is the video name
+            video.controls = true;
+            video.style.width = "100%"; // Make video fill the width of the text box
+            video.style.height = "auto"; // Maintain the aspect ratio
+
+            // Append video and text description to the paragraphCanvas
+            paragraphCanvas.appendChild(video);
+
+            const description = document.createElement("p");
+            description.textContent = paragraph.description;
+            paragraphCanvas.appendChild(description);
 
             // Position the popup near the cursor
             paragraphCanvas.style.left = event.pageX + 15 + "px";
@@ -33,8 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-        // Handle mouse leaving the list item
-        item.addEventListener("mouseleave", function () {
+        // Handle mouse leaving the anchor element
+        linkElement.addEventListener("mouseleave", function () {
           hidePopupTimeout = setTimeout(function () {
             if (!isHoveringOverPopup) {
               paragraphCanvas.style.display = "none"; // Hide the popup
