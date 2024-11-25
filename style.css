@@ -371,19 +371,19 @@ li {
 }
 
 .KG::after {
-  content: "Analysis:15";
+  content: "Analysis:23";
 }
 
 .OKG::after {
-  content: "Analysis:15";
+  content: "Analysis:22";
 }
 
 .KGH::after {
-  content: "Analysis:12";
+  content: "Analysis:19";
 }
 
 .OKGH::after {
-  content: "Analysis:15";
+  content: "Analysis:20";
 }
 
 .col-experiment-list::before {
@@ -397,19 +397,19 @@ li {
 }
 
 .KG::before {
-  content: "Total:16";
+  content: "Total:23";
 }
 
 .OKG::before {
-  content: "Total:15";
+  content: "Total:22";
 }
 
 .KGH::before {
-  content: "Total:13";
+  content: "Total:20";
 }
 
 .OKGH::before {
-  content: "Total:15";
+  content: "Total:20";
 }
 
 /* Counter */
